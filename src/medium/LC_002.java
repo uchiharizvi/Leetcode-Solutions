@@ -1,6 +1,6 @@
-package easy;
+package medium;
 
-public class LC_Easy_2_AddTwoNumbers {
+public class LC_002 {
     static class Node {
         int data;
         Node next;
@@ -12,8 +12,9 @@ public class LC_Easy_2_AddTwoNumbers {
             this.data = data;
             next = null;
         }
+    }
 
-        private static Node addTwoList(Node l1, Node l2) {
+        public Node addTwoList(Node l1, Node l2) {
             //add code here
             Node result = new Node();
             Node first = l1;
@@ -26,8 +27,8 @@ public class LC_Easy_2_AddTwoNumbers {
                 int secVal = (second != null) ? second.data : 0;
 
                 int sum = firstVal + secVal + divider;//2+5+0 = 7
-                divider = sum / 10; // 7/10 = 0.7
-                remainder = sum % 10;//7%10 = 3
+                divider = sum / 10; //
+                remainder = sum % 10;//7
                 /**understand this in detail**/
                 response.next = new Node(remainder);
                 response = response.next;
@@ -37,5 +38,26 @@ public class LC_Easy_2_AddTwoNumbers {
             if (divider > 0) response.next = new Node(divider);
             return result.next;
         }
+
+
+    public static void main(String[] args) {
+        Node l1 = new Node(2);
+        l1.next = new Node(4);
+        l1.next.next = new Node(3);
+
+        Node l2 = new Node(5);
+        l2.next = new Node(6);
+        l2.next.next = new Node(4);
+        LC_002 code = new LC_002();
+        Node result = code.addTwoList(l1,l2);
+        print(result);
+
+    }
+
+    private static void print(Node result) {
+       while (result!=null){
+           System.out.println(result.data);
+           result = result.next;
+       }
     }
 }
