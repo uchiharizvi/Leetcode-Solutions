@@ -13,7 +13,10 @@ public class LC_002 {
             next = null;
         }
     }
-
+    /**
+     * TC: 2 ms
+     * SC: 48 MB
+     */
         public Node addTwoList(Node l1, Node l2) {
             //add code here
             Node result = new Node();
