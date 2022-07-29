@@ -8,7 +8,9 @@ public class LC_009 {
     }
 
     /**
-     * Reverse Int Traditional Method
+     * Traditional Approach
+     * TC : 13 ms
+     * SC : 45.6 MB
      **/
     public static boolean isPalindrome(int x) {
         String convertedX = String.valueOf(x);
@@ -24,7 +26,11 @@ public class LC_009 {
         if (x == reverse) return true;
         return false;
     }
-
+    /**
+     * Recursive Approach
+     * TC : 11ms
+     * SC : 45.3 MB
+     **/
     public static boolean isPalindrome_R(int x) {
         boolean negative = x < 0 ? true : false;
         if (negative) return false;
