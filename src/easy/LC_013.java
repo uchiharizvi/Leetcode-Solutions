@@ -13,7 +13,8 @@ public class LC_013 {
     }
 
     /**
-     * Approach : Stack DS
+     * Tc : 7 ms
+     * Sc : 44.9 MB
      */
     public static int romanToInt(String s) {
         int sum = 0;
@@ -24,6 +25,29 @@ public class LC_013 {
                 if (x >= y) sum += x;
                 else sum -= x;
             } else sum += x;
+        }
+        return sum;
+    }
+
+    /**
+     * Tc : 3 ms
+     * Sc : 39.8 MB
+     */
+    public static int romanToInt_2(String s) {
+        int sum = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int x = value(s.charAt(i));
+            if (i + 1 < s.length()) {
+                int y = value(s.charAt(i + 1));
+                if (x >= y) sum += x;
+                else {
+                    sum = sum + y - x;
+                    i++;
+                }
+            } else {
+                sum += x;
+                i++;
+            }
         }
         return sum;
     }
