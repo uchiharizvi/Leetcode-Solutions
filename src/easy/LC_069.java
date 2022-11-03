@@ -3,9 +3,9 @@ package easy;
 /**
  * Valid Parenthesis
  */
-public class LC_67 {
+public class LC_069 {
     public static void main(String[] args) {
-        LC_67 obj = new LC_67();
+        LC_069 obj = new LC_069();
         System.out.println(obj.addBinary("11", "1"));
     }
 

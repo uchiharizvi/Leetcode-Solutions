@@ -1,6 +1,6 @@
 package easy;
 /**Valid Parenthesis*/
-public class LC_20 {
+public class LC_020 {
     public static void main(String[] args) {
 
     }

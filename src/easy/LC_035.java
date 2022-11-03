@@ -3,7 +3,7 @@ package easy;
 /**
  * Valid Parenthesis
  */
-public class LC_35 {
+public class LC_035 {
     public static void main(String[] args) {
 
     }

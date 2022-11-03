@@ -3,7 +3,7 @@ package easy;
 /**
  * Remove Duplicates from Sorted Array
  */
-public class LC_26 {
+public class LC_026 {
     public static void main(String[] args) {
 
     }

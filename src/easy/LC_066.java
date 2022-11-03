@@ -9,9 +9,9 @@ import java.util.stream.Collectors;
 /**
  * Valid Parenthesis
  */
-public class LC_66 {
+public class LC_066 {
     public static void main(String[] args) {
-        LC_66 obj = new LC_66();
+        LC_066 obj = new LC_066();
         int[] input = {9};
         System.out.println(obj.checkIfEndDigit(input, 9));
         System.out.println("Input");

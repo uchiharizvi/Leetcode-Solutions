@@ -1,14 +1,15 @@
 package easy;
 
-/**
- * Remove Duplicates from Sorted Array
- */
-public class LC_27 {
+public class RemoveElement {
     public static void main(String[] args) {
 
+        int[] nums = {3, 2, 2, 3};
+        int val = 3;
+        System.out.println(removeElement(nums, val));
     }
 
-    public int removeElement(int[] nums, int val) {
+    public static int removeElement(int[] nums, int val) {
+        //two pointers Approach
         int i = 0, j = 0;
         while (j < nums.length) {
             if (nums[j] != val) {

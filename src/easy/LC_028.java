@@ -3,9 +3,9 @@ package easy;
 /**
  * Implement strStr()
  */
-public class LC_28 {
+public class LC_028 {
     public static void main(String[] args) {
-        LC_28 obj = new LC_28();
+        LC_028 obj = new LC_028();
         int result = obj.strStr("a", "a");
         System.out.println(result);
     }

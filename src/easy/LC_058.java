@@ -1,13 +1,11 @@
 package easy;
 
-import java.util.Arrays;
-
 /**
  * Valid Parenthesis
  */
-public class LC_58 {
+public class LC_058 {
     public static void main(String[] args) {
-        LC_58 obj = new LC_58();
+        LC_058 obj = new LC_058();
         obj.lengthOfLastWord("Hello World");
     }
 
